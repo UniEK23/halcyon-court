@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+        <meta name="description" content="Fiction furnished serviced apartments in Uyo, Akwa Ibom, with steady power, a gated compound and a kitchen that cooks the way Akwa Ibom eats." />
+
+        <title>Halcyon Court — Serviced Apartments, Uyo</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <a class="logo" href="#/"><i></i><span>Halcyon Court</span></a>
+            
+            <nav>
+                <a href="#/" data-p="home">Home</a>
+                <a href="#/suites" data-p="suites">Suites</a>
+                <a href="#/book" data-p="book">Book</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="pg" id="pg-home">
+                <div class="hero">
+                    <canvas id="c-home" aria-label="3D model of the Halcyon Court entrance at night"></canvas>
+
+                    <span class="hint">Drag to look around</span>
+
+                    <div class="ctl">
+                        <label>
+                            Night
+                            <input id="tod" type="range" min="0" max="100" value="0" aria-label="Time of day" />
+                            Day
+                        </label>
+
+                        <button class="btn g" id="tour" type="button">
+                            Take the tour
+                        </button>
+                    </div>
+
+                    <div class="hc">
+                        <h1>Come home to a quieter kind of luxury.</h1>
+
+                        <p>
+                            Furnished serviced apartments in Uyo, with steady power, a gated
+                            compound and a kitchen that cooks the way Akwa Ibom eats.
+                        </p>
+                        
+                        <a class="btn" href="#/suites">See the suites</a>
+                        <a class="btn g" href="#/book">Book a stay</a>
+                    </div>
+                </div>
+
+                <div class="facts">
+                    <div>
+                        <b>Light that stays on</b><span>Inverter and generator backup</span>
+                    </div>
+
+                    <div>
+                        <b>Gated, watched</b><span>CCTV and a night guard</span>
+                    </div>
+
+                    <div>
+                        <b>Fast Wi-Fi</b><span>Built for remote work</span>
+                    </div>
+
+                    <div>
+                        <b>In-house kitchen</b><span>Breakfast to late dinner</span>
+                    </div>
+                </div>
+
+                <div class="w">
+                    <h2>Breakfast, the Ibom way</h2>
+
+                    <p>
+                        Order from the kitchen and it arrives hot at your door. Three things
+                        guests ask for first:
+                    </p>
+
+                    <div class="menu">
+                        <div class="dish a">
+                            <img src="images/istockphoto-1373169941-612x612.webp" alt="">
+                            
+                            <div class="dish-description">
+                                <h3>Afang soup and fufu</h3>
+                                <p>Slow-cooked greens, smoked fish, a proper swallow.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish b">
+                            <img src="images/istockphoto-1373169941-612x612.webp" alt="">
+
+                            <div class="dish-description">
+                                <h3>Party jollof, peppered quail</h3>
+                                <p>Smoky rice, plantain on the side.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish c">
+                            <img src="images/istockphoto-1373169941-612x612.webp" alt="">
+
+                            <div class="dish-description">
+                                <h3>Sticky ribs, potato salad</h3>
+                                <p>Glazed and grilled to order.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="band">
+                    <div>
+                        <h2>Your first night is the best way to decide.</h2>
+                        <a class="btn" href="#/book">Check availability</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pg" id="pg-suites" hidden>
+                <div class="w" style="padding-bottom: 0">
+                    <h1 style="font-size: clamp(2rem, 5vw, 3.4rem)">
+                        Three suites, one standard.
+                    </h1>
+
+                    <p>
+                        Every suite has air conditioning, a smart TV, a fitted kitchenette,
+                        hot water and a private entrance. Turn the room below to see how
+                        they feel.
+                    </p>
+                </div>
+                
+                <div class="w" style="padding-top: 1rem">
+                    <div class="view">
+                        <canvas
+                            id="c-room"
+                            aria-label="Interactive 3D model of a suite lounge and bedroom"
+                        ></canvas>
+
+                        <div class="tabs">
+                            <button aria-pressed="true" data-v="L">Lounge</button>
+                            <button aria-pressed="false" data-v="B">Bedroom</button>
+                            <button aria-pressed="true" data-l="warm">Warm</button>
+                            <button aria-pressed="false" data-l="cinema">Cinema</button>
+                            <button aria-pressed="false" data-l="focus">Focus</button>
+                        </div>
+
+                        <div class="tip" id="tip">
+                            Click the amber points to inspect the room. Drag, or click the
+                            view and use the arrow keys.
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 1rem; color: var(--mut); font-size: 0.92rem">
+                        This model renders in real time in your browser. Lighting, camera
+                        and hotspots work the way they do in a game engine, and it runs on a
+                        phone.
+                    </p>
+
+                    <div class="suites">
+                        <div class="suite">
+                            <h3>Studio</h3>
+
+                            <p>
+                                One open room with a queen bed, lounge corner and kitchenette.
+                                Best for one or two guests.
+                            </p>
+
+                            <div><strong>₦55,000</strong><small>per night</small></div>
+                        </div>
+
+                        <div class="suite">
+                            <h3>One-bed</h3>
+
+                            <p>
+                                Separate bedroom with a fitted wardrobe, full lounge and dining
+                                nook. Fits a couple or a short work stay.
+                            </p>
+
+                            <div><strong>₦85,000</strong><small>per night</small></div>
+                        </div>
+                        
+                        <div class="suite">
+                            <h3>Two-bed</h3>
+
+                            <p>
+                                Two bedrooms, a large lounge and a full kitchen. Made for
+                                families and small teams.
+                            </p>
+
+                            <div><strong>₦120,000</strong><small>per night</small></div>
+                        </div>
+
+                        <div class="suite" style="border-bottom: 1px solid var(--line)">
+                            <h3>Long stay</h3>
+
+                            <p>Staying two weeks or more? Ask for a monthly rate.</p>
+
+                            <div><a class="btn" href="#/book">Ask for a rate</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pg" id="pg-book" hidden>
+                <div class="w two">
+                    <div>
+                        <h1 style="font-size: clamp(2rem, 5vw, 3.4rem)">
+                            Book a stay.
+                        </h1>
+                        
+                        <p>
+                            Send your dates and we reply on WhatsApp with availability and the
+                            final price. No deposit until you confirm.
+                        </p>
+
+                        <p>
+                            <b>Front desk</b><br />Open 24 hours<br />WhatsApp and calls: 0800
+                            000 0000
+                        </p>
+
+                        <p>
+                            <b>Find us</b><br />Ring Road area, Uyo, Akwa Ibom
+                        </p>
+
+                        <p>
+                            <b>Check-in</b> from 2pm. <b>Check-out</b> by 12 noon. Early
+                            arrival on request.
+                        </p>
+                    </div>
+
+                    <form id="bf">
+                        <label class="f">
+                            Full name
+                            <input name="n" required autocomplete="name"/>
+                        </label>
+
+                        <label>
+                            Arrive
+                            <input type="date" name="a" required />
+                        </label>
+
+                        <label>
+                            Leave
+                            <input type="date" name="b" required />
+                        </label>
+
+                        <label>
+                            Suite
+                            <select name="s">
+
+                                <option>Studio</option>
+                                <option>One-bed</option>
+                                <option>Two-bed</option>
+                                <option>Long stay</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Guests
+                            <input
+                                type="number"
+                                name="g"
+                                min="1"
+                                max="8"
+                                value="2"
+                                required
+                            />
+                        </label>
+
+                        <div class="est" id="est">
+                            Choose your dates to see an estimate.
+                        </div>
+
+                        <button class="btn f" style="grid-column: 1/-1" type="submit">
+                            Send on WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Halcyon Court is a fictional brand, a design and development demo.
+            Interactive scenes by Qryslcore, built on a real-time render loop with the
+            same ideas as a game engine: lighting, camera paths and picking.
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
